@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2489d44-8fff-4ee1-971f-1f1297b6d723" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/day3/CrossedWiresMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day3/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day3/DirectionReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day3/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day3/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day3/Wire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/OpCodeInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/OpCodeInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/OpCodeMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/OpCodeMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day1/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/day1/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day2/OpCodeInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day2/OpCodeInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day3/CrossedWiresMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day3/CrossedWiresMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day3/DirectionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day3/DirectionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day3/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day3/Intersection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -49,16 +49,19 @@ public class Intersection {
     }
 
     public static int lowestStepIntersection(List<Wire> wire, HashMap<Point, Integer> points){
-        List<Integer> intersections = new ArrayList<Integer>();
+        int min = Integer.MAX_VALUE;
         Point current = new Point(0, 0);
         for (Wire w : wire) {
             for (int i = 0; i < w.getLength(); i++) {
                 current.increment(w.getDirection().getPoint());
                 if (i != 0 && points.containsKey(current)){
-                    intersections.add(current.getStep() + points.get(current));
+                    int currentStep = current.getStep() + points.get(current);
+                    if(currentStep < min){
+                        min = currentStep;
+                    };
                 }
             }
         }
-        return intersections.stream().min((a,b) -> a - b).get();
+        return min;
     }
 }
