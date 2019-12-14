@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2489d44-8fff-4ee1-971f-1f1297b6d723" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/day4/CodeChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day4/CodeFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day4/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day4/SecureContainerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day5/OpCodeInOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day5/OpCodeParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day5/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day5/TESTMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day5/in.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day3/CrossedWiresMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day3/CrossedWiresMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day3/DirectionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day3/DirectionReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day3/Intersection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day3/Intersection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/OpCodeParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day2/OpCodeParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day2/OpCodeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day2/OpCodeParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
       <recent name="day2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecureContainerMain">
+  <component name="RunManager" selected="Application.TESTMain">
     <configuration name="CrossedWiresMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day3.CrossedWiresMain" />
       <module name="AdventOfCode2019" />
@@ -83,19 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RocketEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day1.RocketEquation" />
-      <module name="AdventOfCode2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SecureContainerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day4.SecureContainerMain" />
       <module name="AdventOfCode2019" />
@@ -109,13 +96,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TESTMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day5.TESTMain" />
+      <module name="AdventOfCode2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TESTMain" />
         <item itemvalue="Application.SecureContainerMain" />
         <item itemvalue="Application.CrossedWiresMain" />
         <item itemvalue="Application.OpCodeMain" />
         <item itemvalue="Application.OpCodeParser" />
-        <item itemvalue="Application.RocketEquation" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +145,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576177859692">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1576177859692" />
     <state x="773" y="291" key="#com.intellij.ide.util.MemberChooser" timestamp="1575404454413">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -153,22 +157,22 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="722" y="187" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1575403995523" />
-    <state width="1874" height="336" key="GridCell.Tab.0.bottom" timestamp="1575573168872">
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom" timestamp="1576177863022">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1575573168872" />
-    <state width="1874" height="336" key="GridCell.Tab.0.center" timestamp="1575573168872">
+    <state width="1874" height="336" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1576177863022" />
+    <state width="1874" height="336" key="GridCell.Tab.0.center" timestamp="1576177863021">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1575573168872" />
-    <state width="1874" height="336" key="GridCell.Tab.0.left" timestamp="1575573168871">
+    <state width="1874" height="336" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1576177863021" />
+    <state width="1874" height="336" key="GridCell.Tab.0.left" timestamp="1576177863021">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1575573168871" />
-    <state width="1874" height="336" key="GridCell.Tab.0.right" timestamp="1575573168872">
+    <state width="1874" height="336" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1576177863021" />
+    <state width="1874" height="336" key="GridCell.Tab.0.right" timestamp="1576177863022">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1874" height="336" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575573168872" />
+    <state width="1874" height="336" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1576177863021" />
     <state width="1874" height="414" key="GridCell.Tab.1.bottom" timestamp="1575486491167">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -185,10 +189,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1874" height="414" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575486491167" />
-    <state x="661" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1575569909859">
+    <state x="661" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1576024545832">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="661" y="432" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1575569909859" />
+    <state x="661" y="432" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1576024545832" />
     <state x="381" y="200" key="new project wizard" timestamp="1575188501263">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

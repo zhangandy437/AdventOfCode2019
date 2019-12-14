@@ -19,6 +19,10 @@ public class OpCodeParser {
                 opcode[opcode[i + 3]] = opcode[opcode[i + 1]] + opcode[opcode[i + 2]];
             } else if (opcode[i] == 2) {
                 opcode[opcode[i + 3]] = opcode[opcode[i + 1]] * opcode[opcode[i + 2]];
+            } else if (opcode[i] == 3) {
+
+            } else if (opcode[i] == 4) {
+
             } else {
                 throw new InputMismatchException("Position i was " + opcode[i]);
             }
