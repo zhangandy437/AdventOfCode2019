@@ -6,19 +6,18 @@ import java.util.InputMismatchException;
 import java.util.List;
 
 public class OpCodeParser {
-    public static int parse(int[] opcode, int input) {
-        boolean hasEnded = false;
+    public static String parse(int[] opcode, int input) {
+//        day2.OpCodeParser.error1202(opcode, 12, 2);
         int i = 0;
+        List<Integer> outputs = new ArrayList<>();
 
-        List<Integer> inputs = new ArrayList<Integer>();
-        List<Integer> outputs = new ArrayList<Integer>();
-        // Immediate vs Parameterized
-        while (i < opcode.length && !hasEnded) {
+        while (i < opcode.length) {
+            System.out.println(Arrays.toString(opcode));
             int increase = 4;
-            int[] code = getCode(i, opcode);
-            System.out.println(Arrays.toString(code));
+            int[] code = getCode(opcode[i]);
+            getValues(code, opcode, i);
             if (code[0] == 99) {
-                hasEnded = true;
+                return outputs.toString();
             } else if (code[0] == 1) {
                 opcode[code[3]] = code[1] + code[2];
             } else if (code[0] == 2) {
@@ -30,44 +29,79 @@ public class OpCodeParser {
             } else if (code[0] == 4) {
                 // Output
                 increase = 2;
-                System.out.print(code[1]);
+                outputs.add(code[1]);
+            } else if (code[0] == 5) {
+                // increase by 2
+                if(code[1] != 0){
+                    increase = 0;
+                    i = code[2];
+                } else {
+                    increase = 3;
+                }
+            } else if (code[0] == 6) {
+                if(code[1] == 0){
+                    increase = 0;
+                    i = code[2];
+                } else {
+                    increase = 3;
+                }
+            } else if (code[0] == 7) {
+                // don't change increase
+                if(code[1] < code[2]){
+                    opcode[code[3]] = 1;
+                } else {
+                    opcode[code[3]] = 0;
+                }
+            } else if (code[0] == 8) {
+                // don't change increase
+                if(code[1] == code[2]){
+                    opcode[code[3]] = 1;
+                } else {
+                    opcode[code[3]] = 0;
+                }
             } else {
                 throw new InputMismatchException("Position i was " + code[0]);
             }
-            i += increase;
             System.out.println(Arrays.toString(opcode));
+            i += increase;
         }
-//        inputs.forEach(j -> System.out.print(j + " "));
-        System.out.println("outputs");
-//        outputs.forEach(j -> System.out.print(j + " "));
-        return opcode[0];
+
+        return outputs.toString();
     }
 
-    public static int[] getCode(int index, int[] opcode){
+    public static int[] getCode(int num) {
+        if (num % 100 == 99) {
+            return new int[]{99};
+        } else if (num % 100 == 3) {
+            return new int[]{3, 1};
+        } else if (num % 100 == 4) {
+            return new int[]{4, 0};
+        } else if (num % 100 == 5 || num % 100 == 6) {
+            return new int[]{num % 100, num / 100 % 10, num / 1000 % 10};
+        }
         int[] code = new int[4];
-        int num = opcode[index];
+
         code[0] = num % 100;
         num /= 100;
         code[1] = num % 10;
         num /= 10;
         code[2] = num % 10;
-        num /= 10;
-        code[3] = num % 10;
+        code[3] = 1;
+//        System.out.println(index + " " + Arrays.toString(code));
+        return code;
+    }
 
-        if(code[0] == 3 || code[0] == 4){
-            code[1] = opcode[index + 1];
-            return code;
-        }
+    private static void getValues(int[] code, int[] opcode, int index) {
+        for (int i = 1; i < code.length; i++) {
+            if (code[i] == 1) {
+                // Immediate mode: actual value
+                code[i] = opcode[index + i];
 
-        for(int i = 1; i < code.length - 1; i++){
-            if(code[i] == 1){
-                code[i] = opcode[i + index];
-            } else if(code[i] == 0){
-                code[i] = opcode[opcode[i + index]];
+            } else if (code[i] == 0) {
+                // Position mode: value in the parameter
+                code[i] = opcode[opcode[index + i]];
             }
         }
-        code[3] = opcode[index + 3];
-        System.out.println("Done");
-        return code;
+        System.out.println(index + " " + Arrays.toString(code));
     }
 }

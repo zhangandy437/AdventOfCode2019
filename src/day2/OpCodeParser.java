@@ -31,7 +31,7 @@ public class OpCodeParser {
         return opcode[0];
     }
 
-    private static void error1202(int[] opcode, int noun, int verb) {
+    public static void error1202(int[] opcode, int noun, int verb) {
         opcode[1] = noun;
         opcode[2] = verb;
     }
