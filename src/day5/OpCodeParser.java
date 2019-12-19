@@ -7,7 +7,6 @@ import java.util.List;
 
 public class OpCodeParser {
     public static String parse(int[] opcode, int input) {
-//        day2.OpCodeParser.error1202(opcode, 12, 2);
         int i = 0;
         List<Integer> outputs = new ArrayList<>();
 
@@ -87,7 +86,6 @@ public class OpCodeParser {
         num /= 10;
         code[2] = num % 10;
         code[3] = 1;
-//        System.out.println(index + " " + Arrays.toString(code));
         return code;
     }
 
@@ -102,6 +100,5 @@ public class OpCodeParser {
                 code[i] = opcode[opcode[index + i]];
             }
         }
-        System.out.println(index + " " + Arrays.toString(code));
     }
 }

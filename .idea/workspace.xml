@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89de7e8a-b535-4a0b-8259-5106124d6a04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/OrbitConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/OrbitIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/OrbitMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/Planet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/in.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/META-INF/AdventOfCode2019.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeInOut.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day2/OpCodeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day2/OpCodeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day5/OpCodeInOut.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day5/OpCodeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day5/OpCodeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day5/TESTMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day5/TESTMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,9 +36,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.OrbitMain">
+    <configuration name="OrbitMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day6.OrbitMain" />
+      <module name="AdventOfCode2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TESTMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day5.TESTMain" />
       <module name="AdventOfCode2019" />
@@ -46,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrbitMain" />
         <item itemvalue="Application.TESTMain" />
       </list>
     </recent_temporary>
@@ -80,37 +103,45 @@
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="488" y="302" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1280@0.0.2048.1280" timestamp="1576309851558" />
+    <state x="837" y="363" key="#com.intellij.ide.util.MemberChooser" timestamp="1576713965550">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="837" y="363" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1280@0.0.2048.1280" timestamp="1576713965550" />
     <state x="644" y="244" key="CommitChangelistDialog2" timestamp="1576310716649">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="644" y="244" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1576310716649" />
-    <state width="2006" height="363" key="GridCell.Tab.0.bottom" timestamp="1576534472134">
+    <state width="2006" height="363" key="GridCell.Tab.0.bottom" timestamp="1576736301712">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="363" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1576534472134" />
-    <state width="2006" height="363" key="GridCell.Tab.0.center" timestamp="1576534472133">
+    <state width="2006" height="363" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1576736301712" />
+    <state width="2006" height="363" key="GridCell.Tab.0.center" timestamp="1576736301711">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="363" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1576534472133" />
-    <state width="2006" height="363" key="GridCell.Tab.0.left" timestamp="1576534472132">
+    <state width="2006" height="363" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1576736301711" />
+    <state width="2006" height="363" key="GridCell.Tab.0.left" timestamp="1576736301711">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="363" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1576534472132" />
-    <state width="2006" height="363" key="GridCell.Tab.0.right" timestamp="1576534472134">
+    <state width="2006" height="363" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1576736301711" />
+    <state width="2006" height="363" key="GridCell.Tab.0.right" timestamp="1576736301711">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="363" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1576534472134" />
+    <state width="2006" height="363" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1576736301711" />
     <state x="525" y="279" key="SettingsEditor" timestamp="1576309847068">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="525" y="279" key="SettingsEditor/0.0.2048.1280@0.0.2048.1280" timestamp="1576309847068" />
-    <state x="701" y="472" key="com.intellij.ide.util.TipDialog" timestamp="1576388391475">
+    <state x="701" y="472" key="com.intellij.ide.util.TipDialog" timestamp="1576642269232">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state x="701" y="472" key="com.intellij.ide.util.TipDialog/0.0.2048.1280@0.0.2048.1280" timestamp="1576388391475" />
+    <state x="701" y="472" key="com.intellij.ide.util.TipDialog/0.0.2048.1280@0.0.2048.1280" timestamp="1576642269232" />
     <state x="807" y="564" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576310710695">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="807" y="564" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1280@0.0.2048.1280" timestamp="1576310710695" />
+    <state x="689" y="285" width="670" height="682" key="search.everywhere.popup" timestamp="1576705436471">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="689" y="285" width="670" height="682" key="search.everywhere.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1576705436471" />
   </component>
 </project>
