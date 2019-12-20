@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89de7e8a-b535-4a0b-8259-5106124d6a04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day6/OrbitConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day6/OrbitIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day6/OrbitMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day6/Planet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day6/in.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day6/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day6/PathFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day5/OpCodeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day5/OpCodeParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day6/OrbitConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day6/OrbitConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day6/OrbitMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day6/OrbitMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
