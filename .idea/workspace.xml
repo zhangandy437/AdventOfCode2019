@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4785c66f-488a-4dbc-9e76-988b74867ef2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/day7/Amplifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/AmplifierMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/FeedbackLoopAmp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/OpCodeParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/Permutations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/in.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/test1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day7/testP2-1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/OpCodeParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/TESTMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode2019/day5/TESTMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day5/OpCodeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day5/OpCodeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day5/TESTMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day5/TESTMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day7/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/day7/ReadMe.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
