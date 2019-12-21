@@ -1,38 +1,39 @@
-package day5;
+package day7;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 
 public class OpCodeParser {
-    public static String parse(int[] opcode, int input) {
+
+    private static boolean firstUsed;
+
+    public static int parse(int[] opcode, int firstIn, int secIn) {
+        firstUsed = false;
+
+        int input = firstIn;
         int i = 0;
+
         List<Integer> outputs = new ArrayList<>();
 
         while (i < opcode.length) {
-            int inc = getInc(opcode, i, input, outputs);
-
-            if(inc == Integer.MAX_VALUE){
-                return outputs.toString();
+            if(firstUsed){
+                input = secIn;
             }
+            int[] code = getCode(opcode, i);
+            if (code[0] == 99) {
+                return outputs.get(0);
+            }
+            int inc = getInc(opcode, code, i, input, outputs);
+
 
             i += inc;
         }
 
-        return outputs.toString();
+        return outputs.get(0);
     }
 
-    private static int getInc(int[] opcode, int index, int input, List<Integer> outputs){
-        int[] code = getCode(opcode, index);
-
-        if (code[0] == 99) {
-            return Integer.MAX_VALUE - index;
-        }
-
-        return getInc(opcode, code, index, input, outputs);
-    }
-
-    private static int getInc(int[] opcode, int[] code, int index, int input, List<Integer> outputs){
+    public static int getInc(int[] opcode, int[] code, int index, int input, List<Integer> outputs) {
         return switch (code[0]) {
             case 1, 2 -> addMultiply(opcode, code);
             case 3, 4 -> inOut(opcode, code, input, outputs);
@@ -50,6 +51,7 @@ public class OpCodeParser {
     private static int inOut(int[] opcode, int[] code, int input, List<Integer> outputs) {
         if (code[0] == 3) {
             opcode[code[1]] = input;
+            firstUsed = true;
         } else {
             outputs.add(code[1]);
         }
@@ -57,9 +59,9 @@ public class OpCodeParser {
     }
 
     private static int jump(int[] code, int index) {
-        return code[0] == 5?
-                code[1] != 0 ? code[2] - index: 3:
-                code[1] == 0 ? code[2] - index: 3;
+        return code[0] == 5 ?
+                code[1] != 0 ? code[2] - index : 3 :
+                code[1] == 0 ? code[2] - index : 3;
     }
 
     private static int lessOrEqual(int[] opcode, int[] code) {
@@ -69,14 +71,14 @@ public class OpCodeParser {
         return 4;
     }
 
-    private static int[] getCode(int[] opcode, int index) {
+    public static int[] getCode(int[] opcode, int index) {
         int num = opcode[index];
         return getValues(switch (num % 100) {
-            case 3          -> new int[]{3, 1};
-            case 4          -> new int[]{4, 0};
-            case 5, 6       -> new int[]{num % 100, num / 100 % 10, num / 1000 % 10};
-            case 99         -> new int[]{99};
-            default         -> new int[]{num % 100, num / 100 % 10, num / 1000 % 10, 1};
+            case 3    -> new int[]{3, 1};
+            case 4    -> new int[]{4, 0};
+            case 5, 6 -> new int[]{num % 100, num / 100 % 10, num / 1000 % 10};
+            case 99   -> new int[]{99};
+            default   -> new int[]{num % 100, num / 100 % 10, num / 1000 % 10, 1};
         }, opcode, index);
     }
 
