@@ -11,57 +11,56 @@ public class OpCodeParser {
         List<Integer> outputs = new ArrayList<>();
 
         while (i < opcode.length) {
-            System.out.println(Arrays.toString(opcode));
             int increase = 4;
             int[] code = getCode(opcode[i]);
             getValues(code, opcode, i);
-            if (code[0] == 99) {
-                return outputs.toString();
-            } else if (code[0] == 1) {
-                opcode[code[3]] = code[1] + code[2];
-            } else if (code[0] == 2) {
-                opcode[code[3]] = code[1] * code[2];
-            } else if (code[0] == 3) {
-                // Input
-                increase = 2;
-                opcode[code[1]] = input;
-            } else if (code[0] == 4) {
-                // Output
-                increase = 2;
-                outputs.add(code[1]);
-            } else if (code[0] == 5) {
-                // increase by 2
-                if(code[1] != 0){
-                    increase = 0;
-                    i = code[2];
-                } else {
-                    increase = 3;
+
+            switch(code[0]){
+                case 99 -> {
+                    return outputs.toString();
                 }
-            } else if (code[0] == 6) {
-                if(code[1] == 0){
-                    increase = 0;
-                    i = code[2];
-                } else {
-                    increase = 3;
+                case 1 -> opcode[code[3]] = code[1] + code[2];
+                case 2 -> opcode[code[3]] = code[1] * code[2];
+                case 3 -> {
+                    increase = 2;
+                    opcode[code[1]] = input;
                 }
-            } else if (code[0] == 7) {
-                // don't change increase
-                if(code[1] < code[2]){
-                    opcode[code[3]] = 1;
-                } else {
-                    opcode[code[3]] = 0;
+                case 4 ->{
+                    increase = 2;
+                    outputs.add(code[1]);
                 }
-            } else if (code[0] == 8) {
-                // don't change increase
-                if(code[1] == code[2]){
-                    opcode[code[3]] = 1;
-                } else {
-                    opcode[code[3]] = 0;
+                case 5 -> {
+                    if(code[1] != 0){
+                        increase = 0;
+                        i = code[2];
+                    } else {
+                        increase = 3;
+                    }
                 }
-            } else {
-                throw new InputMismatchException("Position i was " + code[0]);
+                case 6 -> {
+                    if(code[1] == 0){
+                        increase = 0;
+                        i = code[2];
+                    } else {
+                        increase = 3;
+                    }
+                }
+                case 7 -> {
+                    if(code[1] < code[2]){
+                        opcode[code[3]] = 1;
+                    } else {
+                        opcode[code[3]] = 0;
+                    }
+                }
+                case 8 -> {
+                    if(code[1] == code[2]){
+                        opcode[code[3]] = 1;
+                    } else {
+                        opcode[code[3]] = 0;
+                    }
+                }
+                default -> throw new InputMismatchException("Position i was " + code[0]);
             }
-            System.out.println(Arrays.toString(opcode));
             i += increase;
         }
 

@@ -8,8 +8,6 @@ import java.util.List;
 public class OrbitConstructor {
 
     private final static String HEAD = "COM";
-    private final static String YOU = "YOU";
-    private final static String SAN = "SAN";
 
     public static int getAmountOfOrbits(String[] orbits) {
         return depthFirstSearch(hashOrbits(orbits), HEAD, 0);

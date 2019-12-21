@@ -9,7 +9,5 @@ public class TESTMain {
 
     public static void main(String[] args){
         System.out.println(OpCodeParser.parse(OpCodeInput.getFromFile(new File("./src/day5/in.txt")),5));
-
-//        Arrays.stream(OpCodeParser.getCode(0, new int[] {10101, 0, 0, 0})).forEach(System.out::println);
     }
 }

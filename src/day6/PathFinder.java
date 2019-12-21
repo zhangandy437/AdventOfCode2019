@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class PathFinder {
     public static int getAmountOfJumps(String[] orbits, String start, String end) {
-        HashMap<String, Planet> children = hashDoubleEndedOrbits(orbits);
+        HashMap<String, Planet> children = createHashMapTree(orbits);
 
         HashMap<String, Integer> youPath = hashFromYou(children, start);
 
@@ -18,10 +18,9 @@ public class PathFinder {
             }
             len++;
         }
-
     }
 
-    private static HashMap<String, Planet> hashDoubleEndedOrbits(String[] orbits) {
+    private static HashMap<String, Planet> createHashMapTree(String[] orbits) {
         HashMap<String, Planet> children = new HashMap<>();
 
         for (String s : orbits) {
